@@ -16,10 +16,10 @@ searchButton.addEventListener("click", function () {
   // TODO 2: Write an IF statement which determines whether
   // the user-supplied string from #textbox is included in
   // the #sentence string.
-  let textValue = textBox.value.toLowerCase().trim();
-  let sentText = sentence.innerText.toLowerCase().trim();
+  // let textValue = textBox.value.toLowerCase().trim();
+  // let sentText = sentence.innerText.toLowerCase().trim();
 
-  if (sentText.includes(textValue)) {
+  if (sentence.innerText.includes(textBox.value)) {
     searchResults.innerText = "A match was found";
   } else {
     searchResults.innerText = "No Match. Too bad!";
